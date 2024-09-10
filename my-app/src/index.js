@@ -1,35 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Opa from './Opa'
 import reportWebVitals from './reportWebVitals';
+// import Lista from './Lista'
+// import Perfil from './Perfil'
+// import Botao from './Button';
+import ButtonComponent from './ButtonComponent'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const nome = "Keven";
+root.render(
+  <div>
+    {/* <Lista titulo="Lista de itens"></Lista>
+    <Perfil perfil="Informações de perfil" nome="Valdair" area="Construção" hobbies="Pescaria"></Perfil> */}
 
-function tick(){
-  const element = (
-    <div>
-      <h1>Olá, {nome}</h1>
-      <h2> Hora agora: {new Date().toLocaleTimeString()}</h2>
-    </div>
-  );
+    {/* <Botao label="Click aqui!"></Botao> */}
+    <ButtonComponent label="Click aqui!"></ButtonComponent>
+  </div>
+)
 
-  root.render(element);
-};
-
-setInterval(tick, 1000);
-
-
-
-// root.render(
-//   <React.StrictMode>
-//     <Opa />
-//     <App />
-//   </React.StrictMode>
-// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

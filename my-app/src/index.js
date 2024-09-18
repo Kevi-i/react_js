@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ButtonEvent from './ButtonEvent'
+import Produtos from './Produtos'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div>
-    <ButtonEvent></ButtonEvent>
+    <Produtos></Produtos>
   </div>
 )
 

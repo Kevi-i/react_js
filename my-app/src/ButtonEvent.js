@@ -3,16 +3,23 @@ import React from "react";
 class ButtonEvent extends React.Component{
 constructor(props) {
         super(props)
-        this.state = {nr_clicks: 0}
+        this.state = 
+        {
+            nr_clicks: 0
+        };
+
+        this.click = this.click.bind(this);
+
     }
 
     click(){
-        console.log('Opa! Você clicou no botão!!')
+        this.setState({nr_clicks: this.state.nr_clicks + 1})
     }
-
+    
     render(){
         return <>
-            <button onClick={this.click}>Clique aqui para imprimir uma mensagem no console do browser.</button>
+            <button onClick={this.click}disabled={this.state.nr_clicks >= 10}>Clique aqui para imprimir uma mensagem no console do browser.</button>
+            <br></br>
             <label>Você clicou {this.state.nr_clicks} x no botão</label>
         </>        
     }

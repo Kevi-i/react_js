@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 
+import Modal from '../modal/Modal';
 
 function Atividade() {
     const [atividades, setAtividades] = useState([]);
